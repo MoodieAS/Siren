@@ -38,7 +38,7 @@ public final class Siren: NSObject {
     public lazy var rulesManager: RulesManager = .default
 
     /// The current installed version of your app.
-    lazy var currentInstalledVersion: String? = Bundle.version()
+    public lazy var currentInstalledVersion: String? = Bundle.version()
 
     /// The retained `NotificationCenter` observer that listens for `UIApplication.didBecomeActiveNotification` notifications.
     var didBecomeActiveObserver: NSObjectProtocol?
